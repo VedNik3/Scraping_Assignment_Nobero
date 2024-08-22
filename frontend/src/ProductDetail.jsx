@@ -13,7 +13,7 @@ function ProductDetail({ products }) {
   return (
     <div className="product-detail">
       <img
-        src={`https:${product.image_url}`}  // Correctly format the image URL
+        src={`https:${product.image_url}`}  
         alt={product.title}
         className="product-image"
       />

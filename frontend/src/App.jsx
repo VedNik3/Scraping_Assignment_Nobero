@@ -29,18 +29,16 @@ function ProductList({ products, onViewDetails }) {
             {product.available_skus.map((sku, index) => (
               <div key={index} className="product-sku">
                 <img
-                  src={`https:${product.image_url}`}  // Correctly format the image URL
+                  src={`https:${product.image_url}`}  
                   alt={`Product ${index}`}
                 />
               </div>
             ))}
-            {/* <a href={product.url} target="_blank" rel="noopener noreferrer">
-              View Product
-            </a> */}
+            
             <Link to={`/product/${product.id}`}>
-              {/* <button> */}
+             
                 View Details
-              {/* </button> */}
+              
             </Link>
           </div>
         </div>
